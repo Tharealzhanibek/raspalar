@@ -1,0 +1,160 @@
+:root {
+    --gradient-first: #EBEBD3;
+    --gradient-second: #083D77;
+    /* Adding a glass-like background color for the table */
+    --table-bg: rgba(255, 255, 255, 0.15); 
+    --border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Container for the dropdown and button */
+.raspa-chooser {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 20px 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px; /* Space before the table */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* The "Choose a person" text */
+.raspa-chooser label {
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    color: var(--gradient-second);
+    font-size: 1.1rem;
+}
+
+/* Styling the Select Dropdown */
+#person-select {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(8, 61, 119, 0.3);
+    background: white;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #333;
+    width: 250px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#person-select:focus {
+    border-color: var(--gradient-second);
+    box-shadow: 0 0 8px rgba(8, 61, 119, 0.2);
+}
+
+/* The Button */
+#person-button {
+    padding: 12px 25px;
+    background-color: var(--gradient-second);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    min-width: 120px;
+}
+
+/* Adding text to button since it was empty in your HTML */
+#person-button::after {
+    content: "View Schedule";
+}
+
+#person-button:hover {
+    background-color: #062d57; /* Slightly darker blue */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#person-button:active {
+    transform: translateY(0);
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--gradient-first), var(--gradient-second));
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container for spacing */
+#table-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#table-raspa {
+    width: 100%;
+    max-width: 95vw;
+    table-layout: fixed;
+    border-collapse: collapse;
+    background: var(--table-bg);
+    backdrop-filter: blur(10px); /* Blurs the background behind the table */
+    border-radius: 12px;
+    overflow: hidden; /* Clips the corners of the table */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+th {
+    background-color: var(--gradient-second);
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    border: none;
+}
+
+td {
+    border: 1px solid var(--border-color); /* Subtle borders instead of black */
+    height: 60px;
+    text-align: center;
+    color: #333;
+}
+
+/* Subject text inside the cell */
+.subject-text {
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin: 0;
+    white-space: normal; /* Allows text to wrap if it's a name */
+}
+
+.subject-cell {
+    /* Soft gradient background to make it pop */
+    background: rgba(255, 255, 255, 0.4); 
+    
+    /* Text styling */
+    color: var(--gradient-second);
+    font-weight: 700;
+    text-align: center;
+    
+    /* Border to define the "card" inside the cell */
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    
+    /* Subtle inner shadow for depth */
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
+    
+    /* Ensure long subject names don't break layout */
+    padding: 5px;
+    word-wrap: break-word;
+    white-space: normal; /* Allows the name to wrap to a second line if needed */
+}
+
+/* Clean up outer borders as you requested */
+tr:first-child th, tr:first-child td { border-top: none; }
+tr:last-child td { border-bottom: none; }
+td:first-child, th:first-child { border-left: none; }
+td:last-child, th:last-child { border-right: none; }
