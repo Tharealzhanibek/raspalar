@@ -37,7 +37,7 @@ const Students = {
         tuesday: empty_day,
         wednesday: [null, null, null, tuleshova_218, null, null, mustafayeva_428, mustafayeva_428, null, null, null],
         thursday: [null, null, null, null, null, null, borsikbayeva_406, borsikbayeva_406, null, null, null],
-        friday: [zhampetova_406, zhampetova_406, mustafayeva_428, tuleshova_218, null, null, null, null, null, null, null],
+        friday: [zhampetova_461, zhampetova_461, mustafayeva_428, tuleshova_218, null, null, null, null, null, null, null],
         saturday: empty_day
     },
     "Adil": {
