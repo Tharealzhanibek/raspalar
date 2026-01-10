@@ -30,7 +30,7 @@
 }
 
 /* Styling the Select Dropdown */
-#person-select {
+#main-person-select {
     padding: 10px 15px;
     border-radius: 8px;
     border: 1px solid rgba(8, 61, 119, 0.3);
@@ -44,13 +44,13 @@
     transition: all 0.3s ease;
 }
 
-#person-select:focus {
+#main-person-select:focus {
     border-color: var(--gradient-second);
     box-shadow: 0 0 8px rgba(8, 61, 119, 0.2);
 }
 
 /* The Button */
-#person-button {
+#main-person-button {
     padding: 12px 25px;
     background-color: var(--gradient-second);
     color: white;
@@ -64,19 +64,165 @@
 }
 
 /* Adding text to button since it was empty in your HTML */
-#person-button::after {
+#main-person-button::after {
     content: "View Schedule";
 }
 
-#person-button:hover {
+#main-person-button:hover {
     background-color: #062d57; /* Slightly darker blue */
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-#person-button:active {
+#main-person-button:active {
     transform: translateY(0);
 }
+
+#main-person-select {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(8, 61, 119, 0.3);
+    background: white;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #333;
+    width: 250px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#main-person-select:focus {
+    border-color: var(--gradient-second);
+    box-shadow: 0 0 8px rgba(8, 61, 119, 0.2);
+}
+
+/* The Button */
+#main-person-button {
+    padding: 12px 25px;
+    background-color: var(--gradient-second);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    min-width: 120px;
+}
+
+/* Adding text to button since it was empty in your HTML */
+#main-person-button::after {
+    content: "View Schedule";
+}
+
+#main-person-button:hover {
+    background-color: #062d57; /* Slightly darker blue */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#main-person-button:active {
+    transform: translateY(0);
+}
+
+/*  */
+#second-person-select {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(8, 61, 119, 0.3);
+    background: white;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #333;
+    width: 250px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#second-person-select:focus {
+    border-color: var(--gradient-second);
+    box-shadow: 0 0 8px rgba(8, 61, 119, 0.2);
+}
+
+/* The Button */
+#second-person-button {
+    padding: 12px 25px;
+    background-color: var(--gradient-second);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    min-width: 120px;
+}
+
+/* Adding text to button since it was empty in your HTML */
+#second-person-button::after {
+    content: "View Schedule";
+}
+
+#second-person-button:hover {
+    background-color: #062d57; /* Slightly darker blue */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#second-person-button:active {
+    transform: translateY(0);
+}
+
+#second-person-select {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(8, 61, 119, 0.3);
+    background: white;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #333;
+    width: 250px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#second-person-select:focus {
+    border-color: var(--gradient-second);
+    box-shadow: 0 0 8px rgba(8, 61, 119, 0.2);
+}
+
+/* The Button */
+#second-person-button {
+    padding: 12px 25px;
+    background-color: var(--gradient-second);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    min-width: 120px;
+}
+
+/* Adding text to button since it was empty in your HTML */
+#second-person-button::after {
+    content: "View Matching Classes";
+}
+
+#second-person-button:hover {
+    background-color: #062d57; /* Slightly darker blue */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#second-person-button:active {
+    transform: translateY(0);
+}
+
 
 body {
     margin: 0;
@@ -119,7 +265,7 @@ th {
 
 td {
     border: 1px solid var(--border-color); /* Subtle borders instead of black */
-    height: 60px;
+    height: 123px;
     text-align: center;
     color: #333;
 }
@@ -151,6 +297,26 @@ td {
     padding: 5px;
     word-wrap: break-word;
     white-space: normal; /* Allows the name to wrap to a second line if needed */
+}
+
+.window-cell {
+    background-color: #FFF4E0; 
+    border: 2px solid #F2CC8F !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    margin: 2px;
+}
+
+/* Injecting the text via CSS */
+.window-cell::after {
+    content: "Common Window";
+    color: #9D7133; 
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 /* Clean up outer borders as you requested */
