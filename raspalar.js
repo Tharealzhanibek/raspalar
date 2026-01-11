@@ -18,15 +18,15 @@ const li_332b = new Subject("English Language", "Li", "332b");
 const tasybayev_45 = new Subject("English Language", "Tasybayev", "45");
 
 // PP 2
-const kelgenbayev_382 = new Subject("Programming Principles", "Kelgenbayev", "382");
-const saduakas_270 = new Subject("Programming Principles", "Saduakas", "270");
-const ismagambetova_222 = new Subject("Programming Principles", "Ismagambetova", "222");
-const ismagambetova_2 = new Subject("Programming Principles", "Ismagambetova", "2");
-const baisakov_414 = new Subject("Programming Principles", "Baisakov", "414");
-const baisakov_269 = new Subject("Programming Principles", "Baisakov", "269");
-const sultan_438 = new Subject("Programming Principles", "Sultan", "438");
-const usyukin_367 = new Subject("Programming Principles", "Usyukin", "367");
-const usyukin_270 = new Subject("Programming Principles", "Usyukin", "270");
+const kelgenbayev_382 = new Subject("Programming Principles 2", "Kelgenbayev", "382");
+const saduakas_270 = new Subject("Programming Principles 2", "Saduakas", "270");
+const ismagambetova_222 = new Subject("Programming Principles 2", "Ismagambetova", "222");
+const ismagambetova_2 = new Subject("Programming Principles 2", "Ismagambetova", "2");
+const baisakov_414 = new Subject("Programming Principles 2", "Baisakov", "414");
+const baisakov_269 = new Subject("Programming Principles 2", "Baisakov", "269");
+const sultan_438 = new Subject("Programming Principles 2", "Sultan", "438");
+const usyukin_367 = new Subject("Programming Principles 2", "Usyukin", "367");
+const usyukin_270 = new Subject("Programming Principles 2", "Usyukin", "270");
 
 // DISCRETE STRUCTURES
 const mustafayeva_428 = new Subject("Discrete Structures", "Mustafayeva", "428");
