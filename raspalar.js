@@ -86,6 +86,14 @@ const Students = {
         friday: [zhampetova_461, zhampetova_461, mustafayeva_428, tuleshova_218, null, null, null, null, null, null, null],
         saturday: [...empty_day]
     },
+    "Zhoni": {
+        monday: [null, adilzhan_kunaeva, adilzhan_kunaeva, kelgenbayev_382, kelgenbayev_382, null, null, null, zhunusova_251, null, null],
+        tuesday: [...empty_day],
+        wednesday: [null, null, null, adilzhan_32, sultan_438, sultan_438, null, null, zhunusova_251, null, null],
+        thursday: [null, null, null, null, null, null, borsikbayeva_406, borsikbayeva_406, null, null, null],
+        friday: [null, null, zhampetova_461, zhampetova_461, null, null, null, null, zhunusova_251, null, null],
+        saturday: [...empty_day]
+    },
     "Aminya": {
         monday: [null, kelgenbayev_382, kelgenbayev_382, null, null, saduakas_270, saduakas_270, null, zhunusova_251, null, null],
         tuesday: [...empty_day],
