@@ -16,6 +16,7 @@ const li_435 = new Subject("English Language", "Li", "156");
 const li_335 = new Subject("English Language", "Li", "332b");
 const li_332b = new Subject("English Language", "Li", "332b");
 const li_179 = new Subject("English Language", "Li", "179");
+const li_344 = new Subject("English Language", "Li", "344");
 const tasybayev_45 = new Subject("English Language", "Tasybayev", "45");
 const tasybayev_216b = new Subject("English Language", "Tasybayev", "216b");
 
@@ -24,13 +25,18 @@ const kelgenbayev_382 = new Subject("Programming Principles 2", "Kelgenbayev", "
 const kelgenbayev_305 = new Subject("Programming Principles 2", "Kelgenbayev", "305");
 const kelgenbayev_441 = new Subject("Programming Principles 2", "Kelgenbayev", "441");
 const saduakas_270 = new Subject("Programming Principles 2", "Saduakas", "270");
+const ismagambetova_270 = new Subject("Programming Principles 2", "Ismagambetova", "270");
 const ismagambetova_222 = new Subject("Programming Principles 2", "Ismagambetova", "222");
 const ismagambetova_2 = new Subject("Programming Principles 2", "Ismagambetova", "2");
 const baisakov_414 = new Subject("Programming Principles 2", "Baisakov", "414");
 const baisakov_269 = new Subject("Programming Principles 2", "Baisakov", "269");
 const sultan_438 = new Subject("Programming Principles 2", "Sultan", "438");
+const sultan_280 = new Subject("Programming Principles 2", "Sultan", "280");
 const usyukin_367 = new Subject("Programming Principles 2", "Usyukin", "367");
 const usyukin_270 = new Subject("Programming Principles 2", "Usyukin", "270");
+const aksha_382 = new Subject("Programming Principles 2", "Aksha", "382");
+const akshabayev_367 = new Subject("Programming Principles 2", "Akshabayev", "367");
+const akshabayev_455 = new Subject("Programming Principles 2", "Akshabayev", "455");
 
 // DISCRETE STRUCTURES
 const mustafayeva_428 = new Subject("Discrete Structures", "Mustafayeva", "428");
@@ -49,6 +55,7 @@ const kaiym_412 = new Subject("Discrete Structures", "Kaiym", "412");
 // CALCULUS 2
 const borsikbayeva_406 = new Subject("Calculus 2", "Borsikbayeva", "406");
 const sarsenova_726 = new Subject("Calculus 2", "Sarsenova", "726");
+const nurlanbek_69 = new Subject("Calculus 2", "Nurlanbek", "69");
 
 // SOCIOLOGY
 const zhampetova_461 = new Subject("Sociology", "Zhampetova", "461");
@@ -155,13 +162,29 @@ const Students = {
         friday: [koyantayeva_349, null, null, null, null, zhampetova_336, zhampetova_336, null, sarsenova_726, sarsenova_726, null],
         saturday: [...empty_day]
     },
+    "Beibit": {
+        monday: [null, null, null, null, null, null, null, li_344, null, null, null],
+        tuesday: [...empty_day],
+        wednesday: [null, mustafayeva_222, mustafayeva_222, null, null, null, null, li_344, null, null, null],
+        thursday: [null, null, null, null, null, mustafayeva_249, borsikbayeva_406, borsikbayeva_406, null, null, null],
+        friday: [null, null, null, null, null, zhampetova_336, zhampetova_336, li_344, null, null, null],
+        saturday: [akshabayev_367, akshabayev_367, null, null, akshabayev_455, akshabayev_455, null, null, null, null, null]
+    },
+    "Sabi": {
+        monday: [null, null, null, null, null, null, null, zhunusova_216b, null, null, null],
+        tuesday: [...empty_day],
+        wednesday: [null, null, aksha_382, aksha_382, null, tazabekova_305, tazabekova_305, zhunusova_332b, null, tazabekova_410, null],
+        thursday: [null, null, null, nurlanbek_69, nurlanbek_69, null, null, null, null, null, null],
+        friday: [zhampetova_461, zhampetova_461, null, ismagambetova_270, ismagambetova_270, null, null, zhunusova_216b, null, null, null],
+        saturday: [...empty_day]
+    },
     "Daulet": {
         monday: [null, null, koyantayeva_156, null, null, null, null, null, null, null, null],
         tuesday: [...empty_day],
-        wednesday: [null, null, koyantayeva_156, null, sultan_438, sultan_438, mustafayeva_428, mustafayeva_428, null, null, null],
+        wednesday: [null, null, koyantayeva_156, null, null, null, mustafayeva_428, mustafayeva_428, null, null, null],
         thursday: [null, null, null, zhampetova_232, zhampetova_232, null, borsikbayeva_406, borsikbayeva_406, null, null, null],
         friday: [null, mustafayeva_32, koyantayeva_156, null, null, null, null, null, null, null, null],
-        saturday: [kelgenbayev_441, kelgenbayev_441, null, null, null, null, kelgenbayev_305, kelgenbayev_305, null, null, null]
+        saturday: [kelgenbayev_441, kelgenbayev_441, null, null, null, null, sultan_280, sultan_280, null, null, null]
     },
     "Aisana": {
         monday: [null, adilzhan_kunaeva, adilzhan_kunaeva, null, null, null, null, zhunusova_216b, null, null, null],
