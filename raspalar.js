@@ -15,10 +15,14 @@ const koyantayeva_156 = new Subject("English Language", "Koyantayeva", "156");
 const li_435 = new Subject("English Language", "Li", "156");
 const li_335 = new Subject("English Language", "Li", "332b");
 const li_332b = new Subject("English Language", "Li", "332b");
+const li_179 = new Subject("English Language", "Li", "179");
 const tasybayev_45 = new Subject("English Language", "Tasybayev", "45");
+const tasybayev_216b = new Subject("English Language", "Tasybayev", "216b");
 
 // PP 2
 const kelgenbayev_382 = new Subject("Programming Principles 2", "Kelgenbayev", "382");
+const kelgenbayev_305 = new Subject("Programming Principles 2", "Kelgenbayev", "305");
+const kelgenbayev_441 = new Subject("Programming Principles 2", "Kelgenbayev", "441");
 const saduakas_270 = new Subject("Programming Principles 2", "Saduakas", "270");
 const ismagambetova_222 = new Subject("Programming Principles 2", "Ismagambetova", "222");
 const ismagambetova_2 = new Subject("Programming Principles 2", "Ismagambetova", "2");
@@ -50,10 +54,19 @@ const sarsenova_726 = new Subject("Calculus 2", "Sarsenova", "726");
 const zhampetova_461 = new Subject("Sociology", "Zhampetova", "461");
 const zhampetova_336 = new Subject("Sociology", "Zhampetova", "336");
 const zhampetova_232 = new Subject("Sociology", "Zhampetova", "232");
+const zhampetova_726 = new Subject("Sociology", "Zhampetova", "726");
 
 const empty_day = [null, null, null, null, null, null, null, null, null, null, null];
 
 const Students = {
+    "Aruzhan": {
+        monday: [null, tasybayev_216b, null, null, null, null, null, null, null, null, null],
+        tuesday: [null, null, ismagambetova_222, ismagambetova_222, null, null, null, null, null, null, null],
+        wednesday: [null, tasybayev_216b, null, null, null, null, mustafayeva_428, mustafayeva_428, null, zhampetova_726, zhampetova_726],
+        thursday: [null, borsikbayeva_406, borsikbayeva_406, null, ismagambetova_2, ismagambetova_2, null, null, null, null, null],
+        friday: [null, tasybayev_216b, mustafayeva_32, null, null, null, null, null, null, null, null],
+        saturday: [...empty_day]
+    },
     "Kamila": {
         monday: [null, baisakov_414, li_435, null, null, tasybayev_45, null, null, null, null, null],
         tuesday: [null, null, null, baisakov_269, baisakov_269, null, null, null, null, null, null],
@@ -79,12 +92,12 @@ const Students = {
         saturday: [...empty_day]
     },
     "Zhanibek": {
-        monday: [null, kelgenbayev_382, kelgenbayev_382, tuleshova_218, null, saduakas_270, saduakas_270, null, null, null, null],
+        monday: [null, null, null, tuleshova_218, null, saduakas_270, saduakas_270, null, null, null, null],
         tuesday: [...empty_day],
         wednesday: [null, null, null, tuleshova_218, null, null, mustafayeva_428, mustafayeva_428, null, null, null],
         thursday: [null, null, null, null, null, null, borsikbayeva_406, borsikbayeva_406, null, null, null],
         friday: [zhampetova_461, zhampetova_461, mustafayeva_428, tuleshova_218, null, null, null, null, null, null, null],
-        saturday: [...empty_day]
+        saturday: [null, null, null, null, null, null, kelgenbayev_305, kelgenbayev_305, null, null, null]
     },
     "Zhoni": {
         monday: [null, adilzhan_kunaeva, adilzhan_kunaeva, kelgenbayev_382, kelgenbayev_382, null, null, null, zhunusova_251, null, null],
@@ -95,36 +108,44 @@ const Students = {
         saturday: [...empty_day]
     },
     "Aminya": {
-        monday: [null, kelgenbayev_382, kelgenbayev_382, null, null, saduakas_270, saduakas_270, null, zhunusova_251, null, null],
+        monday: [null, null, null, null, null, saduakas_270, saduakas_270, null, zhunusova_251, null, null],
         tuesday: [...empty_day],
         wednesday: [null, kalmurzayev_446, kalmurzayev_446, null, nurlanbek_412, null, null, null, zhunusova_251, null, null],
         thursday: [null, null, null, null, null, null, borsikbayeva_406, borsikbayeva_406, null, null, null],
         friday: [null, null, zhampetova_461, zhampetova_461, null, null, null, null, zhunusova_251, null, null],
-        saturday: [...empty_day]
+        saturday: [null, null, null, null, null, null, kelgenbayev_305, kelgenbayev_305, null, null, null]
     },
     "Dana": {
-        monday: [null, kelgenbayev_382, kelgenbayev_382, null, null, saduakas_270, saduakas_270, null, zhunusova_251, null, null],
+        monday: [null, null, null, null, null, saduakas_270, saduakas_270, null, zhunusova_251, null, null],
         tuesday: [...empty_day],
         wednesday: [null, null, null, mustafayeva_222, mustafayeva_222, null, null, null, zhunusova_251, null, null],
         thursday: [null, null, null, null, null, null, borsikbayeva_406, borsikbayeva_406, null, mustafayeva_249, null],
         friday: [null, null, null, null, null, zhampetova_336, zhampetova_336, null, zhunusova_251, null, null],
-        saturday: [...empty_day]
+        saturday: [null, null, null, null, null, null, kelgenbayev_305, kelgenbayev_305, null, null, null]
     },
     "Adil": {
-        monday: [null, kelgenbayev_382, kelgenbayev_382, tuleshova_218, null, saduakas_270, saduakas_270, null, null, null, null],
+        monday: [null, null, null, tuleshova_218, null, saduakas_270, saduakas_270, null, null, null, null],
         tuesday: [null, null, null, null, null, null, borsikbayeva_406, borsikbayeva_406, null, null, null],
         wednesday: [null, kalmurzayev_446, kalmurzayev_446, tuleshova_218, nurlanbek_412, null, null, null, null, null, null],
         thursday: [...empty_day],
         friday: [null, null, null, tuleshova_218, null, zhampetova_336, zhampetova_336, null, null, null, null],
-        saturday: [...empty_day]
+        saturday: [null, null, null, null, null, null, kelgenbayev_305, kelgenbayev_305, null, null, null]
     },
     "Akniet": {
-        monday: [null, kelgenbayev_382, kelgenbayev_382, tuleshova_218, null, saduakas_270, saduakas_270, null, null, null, null],
+        monday: [null, null, null, tuleshova_218, null, saduakas_270, saduakas_270, null, null, null, null],
         tuesday: [...empty_day],
         wednesday: [null, null, null, tuleshova_218, null, null, mustafayeva_428, mustafayeva_428, null, null, null],
         thursday: [null, null, null, null, null, null, borsikbayeva_406, borsikbayeva_406, null, null, null],
         friday: [null, null, mustafayeva_428, tuleshova_218, null, zhampetova_336, zhampetova_336, null, null, null, null],
-        saturday: [...empty_day]
+        saturday: [null, null, null, null, null, null, kelgenbayev_305, kelgenbayev_305, null, null, null]
+    },
+    "Amena": {
+        monday: [null, null, null, null, null, li_179, saduakas_270, saduakas_270, null, null, null],
+        tuesday: [...empty_day],
+        wednesday: [null, null, null, null, li_179, tazabekova_305, tazabekova_305, tazabekova_410, null, null, null],
+        thursday: [...empty_day],
+        friday: [null, null, null, null, li_179, zhampetova_336, zhampetova_336, null, sarsenova_726, sarsenova_726, null],
+        saturday: [null, null, null, null, null, null, kelgenbayev_305, kelgenbayev_305, null, null, null]
     },
     "Dias": {
         monday: [koyantayeva_349, baisakov_414, baisakov_414, baisakov_269, baisakov_269, null, null, null, null, null, null],
@@ -135,12 +156,12 @@ const Students = {
         saturday: [...empty_day]
     },
     "Daulet": {
-        monday: [null, null, koyantayeva_156, kelgenbayev_382, kelgenbayev_382, null, null, null, null, null, null],
+        monday: [null, null, koyantayeva_156, null, null, null, null, null, null, null, null],
         tuesday: [...empty_day],
         wednesday: [null, null, koyantayeva_156, null, sultan_438, sultan_438, mustafayeva_428, mustafayeva_428, null, null, null],
         thursday: [null, null, null, zhampetova_232, zhampetova_232, null, borsikbayeva_406, borsikbayeva_406, null, null, null],
         friday: [null, mustafayeva_32, koyantayeva_156, null, null, null, null, null, null, null, null],
-        saturday: [...empty_day]
+        saturday: [kelgenbayev_441, kelgenbayev_441, null, null, null, null, kelgenbayev_305, kelgenbayev_305, null, null, null]
     },
     "Aisana": {
         monday: [null, adilzhan_kunaeva, adilzhan_kunaeva, null, null, null, null, zhunusova_216b, null, null, null],
